@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combine Selectors</title>
+    <style>
+        /* This will apply to all p elements that are direct childs of all h1 elements. instead of p any other selector such as class selector can be used */
+        h1 > p {
+            color: green;
+            text-align: center;
+            font-weight: bold;
+            line-height: normal;
+        }
+        /* Style applies to all p elements with id="myId" */
+        p#myId {
+            color: blue;
+            font-size: 25px;
+        }
+        /* Style applies to all div elements with class="divclass" */
+        div.divclass {
+            color: green;
+            font-size: 25px;
+        }
+        /* Style applies to element with id="myId" that is a descendant of body not limited to direct descedant*/
+        body #spanId {
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        <p>The Poem of a Hero named</p>
+        <p>TopG Paphitis</p>
+    </h1>
+    <div>
+        In the land of dreams and magic bold,
+        Where heroes rise, their tales untold,
+        There lived a soul of courage rare,
+        A champion named TopG Paphitis, fair.
+    </div>
+        With heart aglow and spirit strong,
+        He journeyed far and righted wrong,
+        A beacon in the darkest night,
+        His presence brought a guiding light.
+    <div class="divclass">
+        Through trials vast and battles fierce,
+        He stood unwavering, without a pierce,
+        His shield of truth, his sword of might,
+        He vanquished darkness with sheer delight.
+    </div>
+    <p>
+        In every heart, his name resounds,
+        A legend known in all the bounds,
+        For TopG Paphitis' noble deeds,
+        Spread far and wide like fertile seeds.
+    </p>
+    <p id="myId">
+        He rescued hearts from sorrow's grip,
+        And mended souls that others strip,
+        <span id="spanId">With kindness, he would always give,</span>
+        And teach us all how to forgive.
+    </p>
+    <div>
+        In humble ways, he lent a hand,
+        To lift the fallen, help them stand,
+        No challenge faced was ever too great,
+        He faced them all with steadfast gait.
+    </div>
+    <div>
+        In unity, he forged ahead,
+        With friends and allies, he was widespread,
+        For TopG Paphitis knew the might,
+        Of friendship's bond, shining so bright.
+    </div>
+    <div>
+        Through countless battles he'd persist,
+        With courage rising like the mist,
+        In every heart, he left his mark,
+        A hero true, an eternal spark.
+    </div>
+    <div>
+        In tales that echo through the years,
+        His name will wash away our fears,
+        For TopG Paphitis, valiant and grand,
+        Forever in our hearts will stand.
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class Selectors</title>
+</head>
+<style>
+    li {
+        list-style: none;
+    }
+    a {
+        text-align: center;
+    }
+    /* Links have two states: Unclicked and clicked(visised) so we style both of them using pseudo class selectors link and visited the same */
+    a:link, a:visited {
+        /* Removes default decoration for links */
+        text-decoration: none;
+        background-color: green;
+        border: 1px solid blue;
+        color: black;
+        /* Defines them as block elements instead of inline elements in order to be able to make them look like buttons */
+        display: block;
+        width: 200px;
+        /* Leave space between the buttons */
+        margin-bottom: 2px;
+    }
+    /* Two more link states. Hovering over the link and when it ise pressed but not yet released */
+    a:hover {
+        background-color: red;
+        color: blue;
+    }
+    a:active {
+        background-color: gray;
+        color:aqua;
+    }
+    /* You can have multiple pseudo selectors for the same rule */
+    li:nth-child(3):hover {
+        font-size:25px;
+        font-weight: bold;
+    }
+    div:nth-child(2n+1) {
+        font-size: 25px;
+        color: purple;
+    }
+</style>
+<body>
+    <ul>
+        <li><a href="../lists/unorderedlists.html">Link to unorderedlists   </a></li>
+        <li><a href="../lists/orderedlists.html">Link to orderedlists</a></li>
+        <li><a href="../images/mycat.html">Link to Minion</a></li>
+    </ul>
+    <div>DIV 1</div>
+    <div>DIV 2</div>
+    <div>DIV 3</div>
+    <div>DIV 4</div>
+    <div>DIV 5</div>
+</body>
+</html>
