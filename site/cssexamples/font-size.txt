@@ -1,0 +1,24 @@
+for font-size percentages can be used
+Example
+font-size:120%;
+This means that it will increase the default size of the text that the browser specifies to 120%
+
+You can also use the measurement unit em. It roughly multiplies the size by the number
+font-size: 2em; will double it
+The advantage of this is that it doesnt overwrite other declarations of font-size but adds to them
+Example
+body {
+    font-size: 20px;
+}
+p {
+    font-size: 2em;
+}
+Then the font size will be around 40px
+
+body {
+    font-size: 20px;
+}
+p {
+    font-size: 0.5em;
+}
+The size will be around 10px;

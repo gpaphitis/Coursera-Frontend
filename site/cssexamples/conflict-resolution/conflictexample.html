@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conflict example</title>7
+    <style>
+        header.navigation p{
+            color:blue;
+            font-weight: bold;
+        }
+        p.parag {
+            color:red;
+            font-size: 25px;
+        }
+        /* If header style was this */
+        /* header.navigation{
+            color:blue;
+        }*/
+        /*Then they have the same specificity(11) so last declaration wins*/
+    </style>
+</head>
+<body>
+    <header class="navigation">
+        <p class="parag">Example text</p>
+    </header>
+</body>
+</html>

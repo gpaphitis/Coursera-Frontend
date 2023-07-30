@@ -1,0 +1,3 @@
+font-family specifies the possible font style to be used to display text.
+You give multiple option in case devices don't have the font style you choose
+As the last font style use either serif or sans-serif which every device has

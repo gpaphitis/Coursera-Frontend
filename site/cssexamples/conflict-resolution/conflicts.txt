@@ -1,0 +1,52 @@
+Follows 4 rules
+
+1. Origin:
+Last declaration wins
+
+2. Merge:
+If many styles refer to the same element but their rules are for different style options then they are simply merged
+Example
+one.css
+h1 {
+    color: red;
+    font-weight: bold;
+}
+two.css
+h1 {
+    font-size: 20px:
+    color: black;
+}
+
+Then the font size will be 20 px ,weight bold and color will be the stylesheet declared last
+
+3. Inheritance
+A property specified on an element will carry over to all child elements of that element
+Example
+body {
+    font-size: 20px;
+    color: red;
+}
+p {
+    color: blue;
+}
+
+The font size for all elements in the body will be 20px and color red but p elements in the body tage will be color blue instead of red
+
+4. Specificity
+Most specific selector combination wins
+
+Use score system
+For each style write the according number to the boxes and the higher the number the more specific it is
+style="..."(inline definition)      ID      Class or pseudoclass        # of elements
+
+Examples            style       ID      Class       # of Elements
+<h1 style="...">    1           0       0           0                   Highest possible specificity
+div p {...}         0           0       0           2                   Only defines two elements
+div #myParag{...}   0           1       0           1
+div.big p{...}      0           0       1           2
+
+To make sure a style of a rule will ovewrite every declaration use !important
+Example
+h1 {
+    color: red; !important
+}
