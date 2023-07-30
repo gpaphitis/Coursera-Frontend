@@ -1,0 +1,2 @@
+Horizontal margins are cumulative but vertical margins are not cumulative
+They collapse to the larger margin

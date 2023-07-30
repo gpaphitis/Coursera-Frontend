@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Elements</title>
+    <style>
+        p {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            margin:5px;
+        }
+        div {
+            background-color: lightblue;
+        }
+
+        #p1 {
+            background-color: #A52A2A;
+            /* By floating, the rest of the document moves up and the floated element is like it doesn't beong to the rest of the document*/
+            float: left;
+        }
+        #p2 {
+            background-color: #DEB887;
+            float: right;
+        }
+        #p3 {
+            background-color: #5F9EA0;
+            /* This means that no other floated element is allowed to be on its left side. If there is then it moves to a new line */
+            clear: left;
+            float:left;
+        }
+        #p4 {
+            background-color: #FF7F50;
+            float:right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Floating Elements</h1>
+    <div>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+        <section style="clear: both">
+            Dummy text
+        </section>
+    </div>
+</body>
+</html>

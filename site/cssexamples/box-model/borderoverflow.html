@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Overflow</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .box {
+            background-color: blue;
+            padding: 10px;
+            border: 5px solid black;
+            margin: 20px;
+            width: 300px;
+            height: 50px;
+            /* Simply cuts the overflowed content */
+            /* overflow: hidden; */
+            /* Puts a scrollbar */
+            overflow: auto;
+            /* Puts both scroll bars even if they are not needed */
+            /* overflow: scroll; */
+        }
+        .content {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1> Border Overflow</h1>
+    <div class="box">
+        <div class="content">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod leo eu luctus tincidunt.
+            Mauris nec quam vel dui fermentum faucibus. Integer pharetra, mauris id cursus hendrerit, neque erat 
+            eleifend odio, vel scelerisque justo elit ut mauris. In hac habitasse platea dictumst.
+            Nunc et semper elit. Suspendisse ut enim sit amet ipsum sollicitudin ultrices. Sed fermentum lectus sed justo vehicula, 
+            at fringilla nulla tempor. Nullam eget ipsum ac dui fringilla eleifend. Sed ac mi vel velit sollicitudin 
+            hendrerit. Vivamus fermentum sem vel purus dapibus, at bibendum purus eleifend.
+        </div>
+    </div>
+</body>
+</html>
