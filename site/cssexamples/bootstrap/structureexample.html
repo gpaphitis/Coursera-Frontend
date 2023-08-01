@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Structure</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Added after the bootstrap link so that our css will override the bootstrap defaults -->
+    <link rel="stylesheet" href="../../resources/css/style.css">
+</head>
+<body>
+    <h1>Bootstrap Structure</h1>
+    <!-- Bootstrap structure to follow with class names. Can be any element, not only div  -->
+    <div class="container"> <!-- can also be container-fluid-->
+        <div class="row">
+            <!--General classname structure col-SIZE-SPAN.
+                Large (lg) is 1200px and above.
+                SPAN is how many grid columns each column of the row should span (The grid has 12 columns)-->
+            <div class="col-md-4">
+
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS plugin depends on jquery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Added after the bootstrap link so that our css will override the bootstrap defaults -->
+    <script src="../../resources/js/script.js"></script>
+</body>
+</html>
