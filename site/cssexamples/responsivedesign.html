@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Tells the browser to use the devices width with initial scale set to 1(meaning the zoom to 100%) -->
+    <!-- Basically tells devices to not try to zoom out to  fit all the content -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        div {
+            border: 1px solid black;
+            padding: 5px;
+            float: left;
+        }
+        p {
+            border: 1px solid green;
+            margin: 5px;
+            background-color: lightgreen;
+        }
+        @media (min-width: 1200px) {
+            .col-lg {
+                width:25%;
+            }
+        }
+        @media (min-width: 950px) and (max-width: 1199px) {
+            .col-lg {
+                width:50%;
+            }
+        }
+        @media (max-width: 949px) {
+            .col-sm {
+                width:80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Design</h1>
+    <div class="col-lg col-md col-sm"><p>Item 1</p></div>
+    <div class="col-lg col-md col-sm"><p>Item 2</p></div>
+    <div class="col-lg col-md col-sm"><p>Item 3</p></div>
+    <div class="col-lg col-md col-sm"><p>Item 4</p></div>
+    <div class="col-lg col-md col-sm"><p>Item 5</p></div>
+    <div class="col-lg col-md col-sm"><p>Item 6</p></div>
+    <div class="col-lg col-md col-sm"><p>Item 7</p></div>
+    <div class="col-lg col-md col-sm"><p>Item 8</p></div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        p {
+            border: 1px solid black;
+            margin-bottom: 15px;
+        }
+        #p1 {
+            background-color: darkred;
+            width:200px;
+            height: 200px;
+        }
+        #p2 {
+            background-color: darkkhaki;
+            width: 100px;
+            height: 100px;
+        }
+        /* The min-width: 1000px is a condition which will be evaluated to true or false.
+        If its is true then the rules it contains will be applied */
+        @media (min-width: 1000px) {
+            #p1 {
+                width:80%;
+            }
+        }
+        /*Has to fall between the two
+        Or is a comma (,)*/
+        @media (min-width: 500px) and (max-width:999px) {
+            #p2 {
+                width:50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Media Queries</h1>
+    <p id="p1"></p>
+    <p id="p2"></p>
+</body>
+</html>
