@@ -46,10 +46,11 @@ section > div {
     color: black;
 }
 p.content {
-    margin-top: 36px;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 5px;
+    margin: 0px;
+    padding-top: 36px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
 }
 @media (min-width: 992px) {
     .col-lg-4 {
