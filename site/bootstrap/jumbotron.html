@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header and Nav Bar Example</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../resources/css/website.css">
+</head>
+
+<body>
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-brand">
+                    <!-- The d-*-none class makes the display attribute to none -->
+                    <a href="index.html" id="logo-link">
+                        <img src="../resources/minion.jpg" class="d-none d-md-inline-block logo-img align-text-center">
+                        Header and Nav Bar Example
+                    </a>
+                </div>
+                <div id="actions">
+                    <div class="nav justify-contend-end d-none d-lg-inline-block action">
+                        <a href="index.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                            </svg><br>Action
+                        </a>
+                    </div>
+                    <div class="nav justify-contend-end d-none d-lg-inline-block action">
+                        <a href="tel:97802067">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                            </svg><br>Call us!
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown d-inline-block d-lg-none justify-contend-end">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </button>
+                    <!-- dropdown-menu-end aligns the end of the menu to the end of the button so it doesn't overflow to the right -->
+                    <ul class="dropdown-menu dropdown-menu-end justify-content-end">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider" href="#">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <!-- Triggers call if used on a telephone -->
+                        <li><a class="dropdown-item" href="tel:97802067">Call us: 97802067</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="main-content" class="container">
+        <div class="jumbotron">
+            <!-- Uses an image for the size <600px which will be responsive by the img-fluid class -->
+            <img src="../resources/minion_1200.jpg" class="img-fluid d-block d-sm-none">
+        </div>
+        <div class="row justify-content-center">
+            <div id="menu" class="col-md-4 col-sm-6 col-xs-12 text-align-center">
+                <a href="index.html">
+                    <p>Menu</p>
+                </a>
+            </div>
+            <div id="cost" class="col-md-4 col-sm-6 col-xs-12 text-align-center">
+                <a href="index.html">
+                    <p>Cost</p>
+                </a>
+            </div>
+            <div id="map" class="col-md-4 col-sm-6 col-xs-12 text-align-center">
+                <a href="index.html" target="_blank">
+                    <p>Map</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <!-- Use this instead -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="../resources/js/script.js"></script>
+</body>
+
+</html>
