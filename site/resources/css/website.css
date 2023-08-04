@@ -56,7 +56,7 @@ svg {
     background: url(../minion.jpg) no-repeat;
     background-position: center;
 }
-div.row > div {
+#tiles > div {
     padding-top: 5px;
 }
 div.row > div > a {
@@ -78,9 +78,49 @@ div.row > div > a > p {
     text-transform: uppercase;
     left:0;
     right:0;
-  margin-left: auto;
-  margin-right: auto;
-
+    margin-left: auto;
+    margin-right: auto;
+}
+.panel-footer {
+    background-color: #222;
+    color:bisque;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    opacity: .9;
+    margin-top: 15px;
+}
+#hours, #address, #faq {
+    text-align: center;
+    font-size: 14.em;
+}
+#main-content {
+    margin-left:20px;
+    margin-right:20px;
+}
+.img-container {
+    /* Use max-width instead of width to allow img-fluid to work */
+    max-width: 250px;
+    height: 134px;
+    position:relative;
+    overflow: hidden;
+}
+.number {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    font-size:13px;
+    bottom:0;
+    right:0;
+    background-color:white;
+}
+.item-row {
+    padding-top:10px;
+    padding-bottom:10px;
+}
+#main-content hr {
+    color: white;
 }
 @media (min-width: 1201px){
     #logo-link {
@@ -123,7 +163,4 @@ div.row > div > a > p {
     #logo-link {
         font-size:25px;
     }
-    #main-content > .jumbotron {
-        height:700px;
-    } 
 }
