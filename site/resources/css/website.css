@@ -19,11 +19,34 @@ body {
     font-size: 30px;
     text-shadow: 1px 1px 1px black;
 }
-div.container {
+.navbar > div.container-fluid {
     margin: 5px;
 }
-.dropdown > button {
-    color:#0D6EFD;
+.action {
+    text-align:center;
+    font-size:2vw;
+    padding:5px;
+}
+.action a:link {
+    text-decoration: none;
+}
+.action:hover {
+    background-color: #e7e7e7;
+}
+#actions {
+    justify-content: normal;
+}
+div.dropdown > button {
+    border: 1px solid maroon;
+    color: maroon;
+    background-color: lightgray;
+}
+ul.dropdown-menu {
+    margin-right: 5px;
+}
+svg {
+    width:20px;
+    height:20px;
 }
 @media (min-width: 1201px){
     #logo-link {
