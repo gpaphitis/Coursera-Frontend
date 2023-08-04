@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header and Nav Bar Example</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../resources/css/website.css">
+</head>
+<body>
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-brand">
+                    <!-- The d-*-none class makes the display attribute to none -->
+                    <a href="index.html" id="logo-link">
+                        <img src="../resources/minion.jpg" class="d-none d-md-inline-block logo-img align-text-center" >
+                        Header and Nav Bar Example
+                    </a>
+                </div>
+                <div class="dropdown d-inline-block d-md-none">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown button
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider" href="#"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </nav>
+    </header>
+    <script src="js/jquery.min.js"></script>
+    <!-- Use this instead -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="../resources/js/script.js"></script>
+</body>
+</html>

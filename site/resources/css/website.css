@@ -1,0 +1,52 @@
+body {
+    background-color: maroon;
+}
+.navbar-brand > a:link, .navbar-brand > a:hover {
+    text-decoration: none;
+    color: #0D6EFD;
+}
+#header-nav {
+    height: 160px;
+    background-color: darkgoldenrod;
+    border: none;
+}
+.logo-img {
+    width: 134px;
+    height: 134px;
+}
+#logo-link {
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px black;
+}
+div.container {
+    margin: 5px;
+}
+.dropdown > button {
+    color:#0D6EFD;
+}
+@media (min-width: 1201px){
+    #logo-link {
+        font-size:50px;
+    }
+}
+@media (min-width: 993px) and (max-width: 1200px){
+    #logo-link {
+        font-size:45px;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px){
+    #logo-link {
+        font-size:40px;
+    }
+}
+@media (min-width: 600px) and (max-width: 767px){
+    #logo-link {
+        font-size:30px;
+    }
+}
+@media (max-width: 599px){
+    #logo-link {
+        font-size:25px;
+    }
+}
