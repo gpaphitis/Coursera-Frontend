@@ -1,0 +1,28 @@
+#header-nav {
+    background-color: darkgoldenrod;
+    border: 2px solid black
+}
+.dropdown {
+    position: static;
+}
+ul.dropdown-menu {
+    background-color: lightgray;
+    font-size: 20px;
+}
+h2.moved {
+    margin-top: 175px;
+}
+.text-content {
+    height:fit-content;
+    padding:20px;
+    font-size:18px;
+    overflow:hidden;
+}
+#main-content {
+    margin: 5px;
+    width:100%;
+    height: 1000px;
+}
+.item {
+    background-color: lightcoral;
+}
