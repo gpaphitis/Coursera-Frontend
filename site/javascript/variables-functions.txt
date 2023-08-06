@@ -1,0 +1,16 @@
+Variables are only defined as 'var x= '
+Their type is  decided at run time
+
+Functions
+functiona {
+
+}
+OR
+var a = function () {   }
+So a has the function as a value NOT the return value of the option
+
+In both ways the invocation of a function is done as a();
+
+Parameters and return values
+function compare (x,y)      //No type specified for the variables
+    return x>y;             //No return type defined anywhere

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Placement</title>
+    <!-- Reference external js file -->
+    <script src="script.js"></script>
+    <!-- Can be written here -->
+    <script>
+        console.log(x);
+    </script>
+</head>
+<body>
+    <h1>Script Placement</h1>
+    <!-- They can also be added in the body tag -->
+    <script src="script.js"></script>
+    <script>
+        console.log("Right before body close");
+    </script>
+</body>
+</html>
