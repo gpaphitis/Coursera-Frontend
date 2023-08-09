@@ -1,6 +1,6 @@
 // The DOMConentLoaded event is triggered once the elements are loaded but before css and images are loaded
 // So we use it to add our event listeners once the elements are loaded
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", (event) => {
 
     // Event is an object passed to the function by the event listener when triggered
     // This has useful information about the triggered event and some methods
