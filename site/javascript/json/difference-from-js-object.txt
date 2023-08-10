@@ -1,0 +1,9 @@
+Has the same format as a javascript object literal since it is a subset of it 
+But
+All property names(i.e. keys) and string values must be in double quotes
+Example
+{
+    "firstName": "TopG",
+    "lastName": "Paphitis,
+    "age": 20
+}
