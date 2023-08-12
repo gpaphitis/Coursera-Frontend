@@ -4,17 +4,18 @@
 </div>
 <div class="row justify-content-center">
     <div id="menu" class="col-md-4 col-sm-6 col-xs-12 text-align-center">
-        <a href="index.html">
+        <!-- When pressed it calls the method which will load the menu items and not a new html -->
+        <a href="#" onclick="$page.loadMenuItems()">
             <p>Menu</p>
         </a>
     </div>
     <div id="cost" class="col-md-4 col-sm-6 col-xs-12 text-align-center">
-        <a href="index.html">
+        <a href="#" onclick="$page.loadMenuItems()">
             <p>Cost</p>
         </a>
     </div>
     <div id="map" class="col-md-4 col-sm-6 col-xs-12 text-align-center">
-        <a href="index.html" target="_blank">
+        <a href="#" onclick="$page.loadMenuItems()" target="_blank">
             <p>Map</p>
         </a>
     </div>

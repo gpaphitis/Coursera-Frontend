@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header and Nav Bar Example</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="../resources/css/website.css">
+    <title>SPA Example</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../resources/css/website.css">
 </head>
 
 <body>
@@ -15,18 +15,18 @@
             <div class="container-fluid">
                 <div class="navbar-brand">
                     <!-- The d-*-none class makes the display attribute to none -->
-                    <a href="index.html" id="logo-link">
-                        <img src="../resources/minion.jpg" class="d-none d-md-inline-block logo-img align-text-center">
-                        Header and Nav Bar Example
+                    <a href="dynamiccontent.html" id="logo-link">
+                        <img src="../../resources/minion.jpg" class="d-none d-md-inline-block logo-img align-text-center">
+                        SPA Example
                     </a>
                 </div>
                 <div id="actions">
-                    <div class="nav justify-contend-end d-none d-lg-inline-block action">
-                        <a href="index.html">
+                    <div id="menu-action" class="nav justify-contend-end d-none d-lg-inline-block action">
+                        <a href="#" onclick="$page.loadMenuItems()">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
                                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                                 <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-                            </svg><br>Action
+                            </svg><br>Menu
                         </a>
                     </div>
                     <div class="nav justify-contend-end d-none d-lg-inline-block action">
@@ -46,7 +46,7 @@
                     </button>
                     <!-- dropdown-menu-end aligns the end of the menu to the end of the button so it doesn't overflow to the right -->
                     <ul class="dropdown-menu dropdown-menu-end justify-content-end">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="$page.loadMenuItems()">Menu</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li>
                             <hr class="dropdown-divider" href="#">
@@ -59,6 +59,7 @@
             </div>
         </nav>
     </header>
+    <!-- This will get filled and changed by my script -->
     <div id="main-content" class="container"></div>
     <footer class="panel-footer">
         <div class="container-fluid">
@@ -78,9 +79,10 @@
             </div>
         </div>
     </footer>
-    <script src="js/jquery.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
     <!-- Use this instead -->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="../resources/js/script.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../../resources/js/ajax-utils.js"></script>
+    <script src="../../resources/js/dynamic-script.js"></script>
 </body>
 </html>

@@ -31,7 +31,7 @@ var myObj={
   status: 'TopG',
   interest: 'programming'
 };
-// Special for loo for object properties
+// Special for loop for object properties
 // Loops through the properties' names
 for(var prop in myObj) {
     console.log(prop+': '+myObj[prop]);
